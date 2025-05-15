@@ -4,6 +4,7 @@ $nombre = $_REQUEST['name'];
 $edad = $_REQUEST['edad'];
 $sexo = $_REQUEST['sexo'];
 $roles = $_REQUEST['roles'];
+$mensaje = $_REQUEST['mensaje'];
 
 $image = $_FILES["image"];
 $path = $_SERVER['DOCUMENT_ROOT'] . '/PROYECTOS/formularios_prueba/images/' . $image['name'];
@@ -18,6 +19,5 @@ foreach ($roles as $key => $rol) {
 }
 echo "</ul>";
 
-//var_dump($path);
-
 move_uploaded_file($image['tmp_name'], $path);
+echo "<p> Mensaje enviado  $mensaje </p>";

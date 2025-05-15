@@ -18,7 +18,12 @@
         </label>
         <br>
         <p>Sexo: </p>
-        <label>
+         <select name="sexo" >
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino" selected>Masculino</option>
+         </select>
+
+      <!--  <label>
             Femenino:
             <input type="radio" name="sexo" value="Femenino">
         </label>
@@ -27,7 +32,7 @@
         <label>
             Masculino:
             <input type="radio" name="sexo" value="Masculino">
-        </label>
+        </label> -->
         <br>
         <br>
         <p>Roles: </p>
@@ -54,6 +59,11 @@
         <br>
             <input type="file" name="image" >
         </label>
+        <br>
+        <br>
+        <label for="">Mensaje: </label>
+         <br>
+        <textarea name="mensaje" cols="30" rows="10"></textarea>
         <br>
         <br>
         <button type="submit"> Enviar </button>
