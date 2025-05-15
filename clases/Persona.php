@@ -1,13 +1,17 @@
 <?php
 class Persona{
-    // attributes 
-    public $nombre, $apellido, $edad;
+    public function __construct(public $nombre, public $apellido, public $edad)
+    {
+        $this->nombre = strtolower($nombre);
+        $this->apellido = strtolower($apellido);    
+
+    }
 
     public function setNombre($nombre) {
         $this->nombre = strtolower($nombre);
     }
 
-    public function getNombre($nombre) : string {
+    public function getNombre() : string {
         return ucwords($this->nombre);
     }
 }
