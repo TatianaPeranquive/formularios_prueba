@@ -6,5 +6,9 @@ class Persona{
     public function setNombre($nombre) {
         $this->nombre = strtolower($nombre);
     }
+
+    public function getNombre($nombre) : string {
+        return ucwords($this->nombre);
+    }
 }
 ?>
