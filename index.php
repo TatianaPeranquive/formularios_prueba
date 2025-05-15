@@ -30,7 +30,23 @@
         </label>
         <br>
         <br>
+        <p>Roles: </p>
+        <label>
+            Administrador:
+            <input type="checkbox" name="roles[]" value="Admin">
+        </label>
 
+        <label>
+            Editor:
+            <input type="checkbox" name="roles[]" value="Editor">
+        </label>
+
+        <label>
+            Moderador:
+            <input type="checkbox" name="roles[]" value="Moderador">
+        </label>
+        <br>
+        <br>
         <button type="submit"> Enviar </button>
         
         <br>
