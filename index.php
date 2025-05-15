@@ -7,9 +7,21 @@
 </head>
 <body>
     <form action="procesar.php" method="POST">
-        <label for="name"> NAME: </label>
+        <label for="name"> Nombre: </label>
         <input id= "name" name="name" type="text">
+        
+        <br>
+
+        <label>
+            Edad:
+            <input type="number" name="edad" >
+        </label>
+        <br>
+        <br>
         <button type="submit"> Enviar </button>
+        
+        <br>
+
     </form>
 </body>
 </html>
