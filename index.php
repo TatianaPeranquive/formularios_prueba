@@ -11,13 +11,26 @@
         <input id= "name" name="name" type="text">
         
         <br>
-
+<br>
         <label>
             Edad:
             <input type="number" name="edad" >
         </label>
         <br>
+        <p>Sexo: </p>
+        <label>
+            Femenino:
+            <input type="radio" name="sexo" value="Femenino">
+        </label>
         <br>
+        <br>
+        <label>
+            Masculino:
+            <input type="radio" name="sexo" value="Masculino">
+        </label>
+        <br>
+        <br>
+
         <button type="submit"> Enviar </button>
         
         <br>
