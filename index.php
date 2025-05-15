@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="procesar.php" method="GET">
+    <form action="procesar.php" method="POST">
         <label for="name"> NAME: </label>
         <input id= "name" name="name" type="text">
         <button type="submit"> Enviar </button>
