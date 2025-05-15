@@ -1,5 +1,5 @@
 <?php
-class Persona{
+class Persona2{
     public $nombre,  $apellido,  $edad , $apellido1, $apellido2;
     
     public function setNombre($nombre) {
@@ -20,7 +20,7 @@ class Persona{
     }
 }
 
-class colombiano extends Persona{
+class colombiano extends Persona2{
     public $departamentos , $ciudad;
 
     public function setApellido($apellido1, $apellido2) {
@@ -29,7 +29,7 @@ class colombiano extends Persona{
     }
 }
 
-class chileno extends Persona{
+class chileno extends Persona2{
     public $comuna, $region;
     public function setApellido($apellido1, $apellido2) {
     parent::setApellido($apellido1, $apellido2);

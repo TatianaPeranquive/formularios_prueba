@@ -1,7 +1,19 @@
 <?php
-require_once('clases/Persona.php');
+class Myclass{
+    private $private = "private";
+    public $public = "public";
+    protected $protected = "protected";
 
-$chileno = new chileno;
-$chileno->setApellido("Peranquive", "Gomez");
-var_dump($chileno->getApellido());
+    function printHellow(){
+        echo $this->public . "<br>";
+        echo $this->private . "<br>";
+        echo $this->protected . "<br>";
+    }
+
+}
+
+$objeto = new Myclass;
+
+echo $objeto->printHellow();
+
 ?>
