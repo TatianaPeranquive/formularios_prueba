@@ -1,7 +1,7 @@
 <?php
 require_once('clases/Persona.php');
 
-$colombiano = new colombiano;
-$colombiano->setApellido("Peranquive", "Gomez");
-var_dump($colombiano->getApellido());
+$chileno = new chileno;
+$chileno->setApellido("Peranquive", "Gomez");
+var_dump($chileno->getApellido());
 ?>

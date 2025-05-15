@@ -29,8 +29,13 @@ class colombiano extends Persona{
     }
 }
 
-class chileno{
+class chileno extends Persona{
     public $comuna, $region;
+    public function setApellido($apellido1, $apellido2) {
+    parent::setApellido($apellido1, $apellido2);
+    echo "El apellido del usuario es: ";
+    }   
+    
 }
 
 ?>
