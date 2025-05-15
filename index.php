@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="procesar.php" method="POST">
+    <form action="procesar.php" method="POST" enctype="multipart/form-data">
         <label for="name"> Nombre: </label>
         <input id= "name" name="name" type="text">
         
@@ -44,6 +44,15 @@
         <label>
             Moderador:
             <input type="checkbox" name="roles[]" value="Moderador">
+        </label>
+        <br>
+        <br>
+
+        <label>
+            Imagen:
+        <br>
+        <br>
+            <input type="file" name="image" >
         </label>
         <br>
         <br>
