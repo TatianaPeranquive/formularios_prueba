@@ -1,14 +1,17 @@
 <?php
 interface iTemplate{
-    public function getHTML();
-    public function setVariable(object $user);
+    public function a();    
 }
 
-//Class MyClass contains 2 abstract methods and must therefore be declared abstract 
-//or implement the remaining methods (iTemplate::getHTML, iTemplate::setVariable) 
+interface iTemplateExtend extends iTemplate{
+    public function b();
+}
 
-class MyClass implements iTemplate{
- public function getHTML(){}
+//Class a contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (iTemplate::a)
+class a implements iTemplateExtend{
+ public function b(){}
+ public function a(){}
+
 public function setVariable(object $user){}
 
 }
