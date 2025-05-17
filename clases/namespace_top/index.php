@@ -1,7 +1,7 @@
 <?php
 
 use Carpeta1\Humano; 
-use Carpeta2\Humano as Humano2 ; // 
+use Carpeta2\Humano as Humano2 ; // Forma2 para usar varios namespace 
 require_once('Carpeta1\Humano.php');
 require_once('Carpeta2\Humano.php');
 
