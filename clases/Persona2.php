@@ -1,6 +1,10 @@
 <?php
 class Persona2{
     public $nombre,  $apellido,  $edad , $apellido1, $apellido2;
+
+    public function saludo ()  {
+        echo "holis";
+    }
     
     public function setNombre($nombre) {
         $this->nombre = strtolower($nombre);
@@ -20,16 +24,12 @@ class Persona2{
     }
 }
 trait Latinoamericano{
-    public function saludoLatinoamericano(){
-        echo "Buenos días Sumercé";
+    public function saludo(){
+        echo "Buenos días mundo";
     }
 }
 
-trait Eurpopeo{
-        public function saludoEuropeo(){
-        echo "Guten Morgen";
-    }
-}
+
 
 class colombiano extends Persona2{
     use Latinoamericano;
@@ -41,14 +41,7 @@ class colombiano extends Persona2{
     }
 }
 
-class alemna extends Persona2{
-    use Eurpopeo;
 
-    public function setApellido($apellido1, $apellido2) {
-        $this->apellido1 = $apellido2;
-        $this->apellido2 = $apellido1;
-    }
-}
 class chileno extends Persona2{
     use Latinoamericano;
     public $comuna, $region;
