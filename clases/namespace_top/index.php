@@ -1,6 +1,7 @@
 <?php
 
-use Carpeta1\Humano; // forma1 para insstanciar el objeto Humano sin nombrar el namespace antes
+use Carpeta1\Humano; 
+use Carpeta2\Humano as Humano2 ; // 
 require_once('Carpeta1\Humano.php');
 require_once('Carpeta2\Humano.php');
 
