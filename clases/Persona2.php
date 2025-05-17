@@ -35,6 +35,10 @@ class colombiano extends Persona2{
     use Latinoamericano;
     public $departamentos , $ciudad;
 
+        public function saludo() {
+        echo "hola desde colombiano";
+    }
+    
     public function setApellido($apellido1, $apellido2) {
         $this->apellido1 = $apellido2;
         $this->apellido2 = $apellido1;
@@ -45,6 +49,7 @@ class colombiano extends Persona2{
 class chileno extends Persona2{
     use Latinoamericano;
     public $comuna, $region;
+
     public function setApellido($apellido1, $apellido2) {
     parent::setApellido($apellido1, $apellido2);
     echo "El apellido del usuario es: ";
