@@ -23,22 +23,32 @@ class Persona2{
         return $this->apellido1 . " " . $this->apellido2;
     }
 }
+
 trait Latinoamericano{
     public function saludo(){
         echo "Buenos días mundo";
     }
 }
 
+trait hola{
+    function decirHola() : string {
+        return "Hola";
+    }
+}
 
-
+trait mundo{
+    function decirMundo() : string {
+        return "Mundo";
+    }
+}
 class colombiano extends Persona2{
-    use Latinoamericano;
+    use hola, mundo;
     public $departamentos , $ciudad;
 
         public function saludo() {
         echo "hola desde colombiano";
     }
-    
+
     public function setApellido($apellido1, $apellido2) {
         $this->apellido1 = $apellido2;
         $this->apellido2 = $apellido1;
