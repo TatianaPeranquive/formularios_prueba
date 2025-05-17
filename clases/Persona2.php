@@ -31,13 +31,21 @@ trait Latinoamericano{
 }
 
 trait traitA{
-    protected function saludo() : string {
-        return "Hola desde el trait A";
+    public function Hola() : string {
+        return "Hola desde el trait A ";
     }
+}
+trait traitB{
+    public function Mundo() : string {
+        return " Hola desde el trait B";
+    }
+}
+trait traitC{
+    use traitA,traitB;
 }
 
 class colombiano extends Persona2{
-    use traitA { saludo as public; } 
+    use traitC ;
 
     public function setApellido($apellido1, $apellido2) {
         $this->apellido1 = $apellido2;
