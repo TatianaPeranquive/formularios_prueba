@@ -1,21 +1,26 @@
 <?php
-interface iTemplate{
-    public function a();    
-}
 
-interface iTemplateExtend {
-    public function b();
-}
+abstract class ClassAbsstractaBase{
+    abstract protected function getValor();
+    abstract public function valorPrefijo($prefijo);
 
-interface iTemplateExtend2 extends iTemplate, iTemplateExtend{
-    public function c();
-}
-
-//Fatal error: Class implementInterfaces contains 1 abstract method 
-//and must therefore be declared abstract or implement the remaining methods (iTemplateExtend2::c)
-class implementInterfaces implements iTemplateExtend2{
-  public function a(){}
-  public function b(){}
-  public function c(){}
+    public function imprimir(){
+        echo $this->getValor();
+    }
 
 }
+
+class ClassConcreta extends ClassAbsstractaBase{
+    protected function getValor(){ 
+        return "protected function from clase concreta";
+    }
+    public function valorPrefijo($prefijo, $separador = " #&$ "){
+        return  "<br>".$prefijo." hola".$separador;
+    }
+}
+
+$clase1 = new ClassConcreta;
+
+$clase1->imprimir();
+
+echo $clase1->valorPrefijo("prefijito");
