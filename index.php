@@ -3,6 +3,6 @@ require_once('clases/Persona2.php');
 
 $colombiano = new colombiano;
 //$colombiano->saludo();
-echo $colombiano->decirHola();
-echo $colombiano->decirMundo();
+echo $colombiano->saludo();
+
 ?>

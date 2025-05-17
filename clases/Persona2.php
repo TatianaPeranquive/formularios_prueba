@@ -31,23 +31,24 @@ trait Latinoamericano{
 }
 
 trait hola{
-    function decirHola() : string {
+    function saludo() : string {
         return "Hola";
     }
 }
 
 trait mundo{
-    function decirMundo() : string {
+    function saludo() : string {
         return "Mundo";
     }
 }
 class colombiano extends Persona2{
-    use hola, mundo;
+    use hola, mundo { hola::saludo insteadOf mundo; }
+
     public $departamentos , $ciudad;
 
-        public function saludo() {
-        echo "hola desde colombiano";
-    }
+    //     public function saludo() {
+    //     echo "hola desde colombiano";
+    // }
 
     public function setApellido($apellido1, $apellido2) {
         $this->apellido1 = $apellido2;
