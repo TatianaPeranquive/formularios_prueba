@@ -1,16 +1,21 @@
+
 <?php
-final class Hogar{
+class Hogar{
     public $color, $seguridad;   
-    
-    public function pintar(){
+    //Cannot override final method Hogar::pintar(
+    final public function pintar(){
         echo "con blanco";
     }
 }
 
-// Fatal error: Class Departamento cannot extend final class Hogar
 class Departamento extends Hogar{
-    
+    public function pintar(){
+        echo "con rojo";
+    }
 }
+
+$departamento = new Departamento;
+$departamento->pintar();
 
 
 ?>
