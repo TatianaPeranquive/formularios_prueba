@@ -29,7 +29,9 @@ class Persona{
 
 }
 
-$persona = new Persona("Anggy", "Peranquive", "Gomez");
+//--> Atirbutos nombrados permite pasar parametros en cualquier orden y se pueden omitir parametros opcionales
+
+$persona = new Persona(nombre:"Anggy", apellido1:"Gomez", apellido2:"Peranquive");
 
 //--> concatenate the calls 
 $persona->setNombre("Anggy")
